@@ -1,19 +1,18 @@
-import React from 'react'
+import React from 'react';
 import { FaTimes } from 'react-icons/fa';
 import { useGlobalContext } from './../../utils/context';
-import { social, links } from './../../utils/data'
-import logo from './../../img/logo.svg'
+import { social, links } from './../../utils/data';
 
 export default function Sidebar() {
-   return (
+	const { isSidebarOpen, closeSidebar } = useGlobalContext();
+	return (
 		<aside
-			className={`sidebar show-sidebar`}
+			className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
 		>
 			<div className='sidebar-header'>
-				{/* <img src={logo} className='logo' alt='pro-tech' width='250px' height='auto'/>  */}
-            <h3 className='logo-brand'>Pro-Technologies</h3>
-            
-				<button className='close-btn'>
+				<h3 className='logo-brand'>Pro-Technologies</h3>
+
+				<button className='close-btn' onClick={closeSidebar}>
 					<FaTimes />
 				</button>
 			</div>
