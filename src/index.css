@@ -157,6 +157,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 .sidebar-toggle {
   position: fixed;
   top: 2rem;
@@ -167,7 +168,10 @@ main {
   color: var(--clr-primary-5);
   transition: var(--transition);
   cursor: pointer;
-  animation: bounce 2s ease-in-out infinite;
+  /* animation: bounce 2s ease-in-out infinite; */
+}
+.sidebar-toggle:hover {
+  transform: scale(1.125);
 }
 
 @keyframes bounce {

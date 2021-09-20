@@ -4,8 +4,13 @@ import { useGlobalContext } from './../../utils/context';
 
 export default function HomePage() {
    return (
-      <div>
-         <h2>this is homePage</h2>
-      </div>
-   )
+		<main>
+			<button className='sidebar-toggle'>
+				<FaBars />
+			</button>
+			<button className='btn'>
+				show modal
+			</button>
+		</main>
+	);
 }
