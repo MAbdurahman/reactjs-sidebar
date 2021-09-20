@@ -10,7 +10,8 @@ export default function Sidebar() {
 			className={`sidebar show-sidebar`}
 		>
 			<div className='sidebar-header'>
-				<img src={logo} className='logo' alt='pro-tech' width='250px' height='auto'/> 
+				{/* <img src={logo} className='logo' alt='pro-tech' width='250px' height='auto'/>  */}
+            <h3 className='logo-brand'>Pro-Technologies</h3>
             
 				<button className='close-btn'>
 					<FaTimes />
