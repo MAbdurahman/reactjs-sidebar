@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
+import HomePage from './../pages/home/HomePage';
+import Modal from './../components/modal/Modal';
+import Sidebar from './../components/sidebar/Sidebar';
 
 function App() {
   return (
-    <div>
-      <h2>This is the application</h2>
-    </div>
+    <>
+      <HomePage />
+      <Modal />
+      <Sidebar />
+    </>
   );
 }
 
