@@ -34,8 +34,8 @@ const AppProvider = ({ children }) => {
 			{children}
 		</AppContext.Provider>
 	);
-};
-
+}
+//custom hook useGlobalContext
 export const useGlobalContext = () => {
 	return useContext(AppContext);
 };
